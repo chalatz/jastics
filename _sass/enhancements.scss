@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-jastics {
   font-family: "Blissful Thinking";
   text-transform: initial;
-  font-size: 28px;
+  font-size: 36px;
   letter-spacing: 1px;
 }
 
@@ -116,12 +116,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: $lightblue;
     height: 15px;
     width: 160px;
-    margin-bottom: 40px;
 }
 
 .horizontal-darkblue-line {
     background: $darkblue;
     height: 15px;
     width: 160px;
-    margin-bottom: 40px;
+}
+
+.slick-list,
+.slick-list:focus,
+.slick-list:active,
+.slick-slide, .slick-slide * {
+    outline: none !important;
 }
