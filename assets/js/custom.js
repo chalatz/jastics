@@ -73,6 +73,27 @@
 
   };
 
+  var hide_menu = function(){
+
+    var main_menu = $('.main-menu'),
+        the_menu = $('#the-menu');
+
+    $('#menu-hover').mouseenter(function(){
+
+      if($(window).innerWidth() >= 768 && the_menu.visible(true) === false){
+        
+       the_menu.addClass('show-the-menu');
+
+      }
+    })
+    .mouseleave(function(){
+     the_menu.removeClass('show-the-menu');
+    });
+
+  }
+
   hover_menu();
+
+  hide_menu();
 
 })();
