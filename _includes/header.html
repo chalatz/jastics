@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-fixed-top">
+<div id="main-navbar" class="navbar navbar-default">
     <div class="container-fluid main-menu">
 
         <div class="navbar-header">
@@ -12,7 +12,7 @@
 
         <div class="navbar-collapse collapse" id="navbar-main">
 
-            <ul class="nav navbar-nav navbar--right">
+            <ul class="nav navbar-nav navbar-items navbar--right">
 
                 {% for item in site.data.menu.items %}
                     {% assign page_url = page.url | remove: '/' | remove: '.html' %}

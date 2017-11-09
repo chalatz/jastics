@@ -4,6 +4,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: $darkblue;
 }
 
+.pushed-right {
+    margin-left: 15px;
+}
+
+.big-text {
+    font-size: 4em;
+}
+
+.text-lightblue {
+    color: $lightblue;
+}
+
+.text-darkblue {
+    color: $darkblue;
+}
+
 .center-container-fluid {
     table-layout: fixed;
 }
@@ -129,4 +145,55 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .slick-list:active,
 .slick-slide, .slick-slide * {
     outline: none !important;
+}
+
+.navbar-default {
+    position: relative;
+}
+
+.home__banner-container {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+
+    .main-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .menu-transition {
+        transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+    }
+    
+    .menu-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    
+    .hide-menu {
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    
+    .show-menu {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    }
+
+    .push-goto-up {
+        bottom: 90px;
+    }
+
 }
